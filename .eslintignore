@@ -1,0 +1,4 @@
+!{src,tests}/**/.*.js
+./*.js
+./node_modules/**
+**/iconfont/**

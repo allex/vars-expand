@@ -1,0 +1,63 @@
+{
+  "name": "vars-expand",
+  "version": "0.0.1",
+  "description": "A shell-like vars expand template transpiler",
+  "jsnext:main": "lib/index.esm.js",
+  "module": "lib/index.esm.js",
+  "main": "lib/index.js",
+  "types": "index.d.ts",
+  "author": "allex <allex.wxn@gmail.com> (http://iallex.com/)",
+  "repository": "allex/vars-expand",
+  "keywords": [
+    "shell-like",
+    "shell-variable-expand",
+    "vars-expand",
+    "transpiler"
+  ],
+  "scripts": {
+    "precommit": "yarn lint && yarn test",
+    "lint": "eslint src/**",
+    "lint:fix": "eslint src/** --fix",
+    "test": "export NODE_ENV=test && jest --coverage --passWithNoTests",
+    "build": "(test -n \"$CI\" || yarn lint) && rb -c",
+    "prepare": "test -n \"$CI\" || yarn build",
+    "prerelease": "standard-version --release-as patch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "@types/node": "^10.5.4",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "~14.0.0",
+    "eslint-config-fdio": "next",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^1.1.2",
+    "jest": "^26.6.3",
+    "tslib": "^2"
+  },
+  "license": "MIT",
+  "files": [
+    "index.d.ts",
+    "lib/",
+    "types"
+  ],
+  "jest": {
+    "testEnvironment": "node",
+    "modulePaths": [
+      "src"
+    ],
+    "testMatch": [
+      "**/?(*-)+(spec|test).?(m)js"
+    ],
+    "roots": [
+      "test"
+    ],
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ]
+  }
+}
