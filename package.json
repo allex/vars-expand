@@ -1,6 +1,6 @@
 {
   "name": "vars-expand",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A shell-like vars expand template transpiler",
   "jsnext:main": "lib/index.esm.js",
   "module": "lib/index.esm.js",
