@@ -5,9 +5,13 @@ interface StringTranspileResult {
   index: number;
 }
 
+interface Kv<T = any> {
+  [k: string]: T
+}
+
 const rExpandVariable = /\$\{([^}]+)\}/g
 
-export default function parameterBraceExpand (str: string, data: { [k: string]: any; }): string {
+export default function parameterBraceExpand (str: string, data: Kv): string {
   // reset reg cursor
   rExpandVariable.lastIndex = 0
 

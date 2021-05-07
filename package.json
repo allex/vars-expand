@@ -1,11 +1,11 @@
 {
   "name": "vars-expand",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A shell-like vars expand template transpiler",
   "jsnext:main": "lib/index.esm.js",
   "module": "lib/index.esm.js",
   "main": "lib/index.js",
-  "types": "index.d.ts",
+  "types": "lib/index.d.ts",
   "author": "allex <allex.wxn@gmail.com> (http://iallex.com/)",
   "repository": "allex/vars-expand",
   "keywords": [
