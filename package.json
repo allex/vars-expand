@@ -34,7 +34,8 @@
     "eslint-plugin-import": "^2.22.1",
     "husky": "^1.1.2",
     "jest": "^26.6.3",
-    "tslib": "^2"
+    "rollup-worker": "next",
+    "typescript": "^4.2.4"
   },
   "license": "MIT",
   "files": [
@@ -42,6 +43,9 @@
     "lib/",
     "types"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "jest": {
     "testEnvironment": "node",
     "modulePaths": [

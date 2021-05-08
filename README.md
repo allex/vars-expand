@@ -1,5 +1,7 @@
 # vars-expand
 
+[![CI Build Master](https://github.com/allex/vars-expand/actions/workflows/ci.yml/badge.svg)](https://github.com/allex/vars-expand/actions/workflows/ci.yml)
+
 A shell-like vars expand template transpiler, Inspired from [Shell Parameter Expansion](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html)
 
 ## Install
